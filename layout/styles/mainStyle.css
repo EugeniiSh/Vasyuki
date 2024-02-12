@@ -1,0 +1,295 @@
+:root
+{
+  --main-text-color-black: #313131;
+  --main-text-color-blue: #3057A2;
+  --main-red: #F54932;
+  --main-white: #FFFFFF;
+  --h1-color: #595653;
+  --disabled-gray: #D6D6D6;
+  --grid-gray: #D0D0D0;
+  --hover-black: #1F1F1F;
+  --hover-yellow: #FBCE51;
+  --footer-background: #E6DBCF;
+
+  --font-family-small-text: 'Golos Text', sans-serif;
+  --font-family-big-text: 'Merriweather', serif;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: var(--font-family-small-text);
+  font-weight: 400;
+  color: var(--main-text-color-black);
+}
+
+.wrapper
+{
+  width: 63.69%;
+  margin: 0 auto;
+}
+
+/* ==================================== + HEADER + ==================================== */
+.header
+{
+  padding: 26px 0 115px;
+  /* height: 700px; */
+  background-image: url(../assets/images/1920-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__head-block
+{
+  display: flex;
+  align-items: center;
+  gap: 6.35px;
+}
+
+.text-head
+{
+  font-weight: bold;
+  font-size: 16.65px;
+  line-height: 108%;
+  text-transform: uppercase;
+  color: var(--h1-color);
+}
+
+.header__content-block
+{
+  padding-top: 62px;
+  width: 542px;
+}
+
+.content-block__main-text-block
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  font-family: var(--font-family-big-text);
+  /* font-weight: 400; */
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.main-text__second-row
+{
+  align-self: center;
+}
+
+.main-text__third-row
+{
+  align-self: flex-end;
+}
+
+.content-block__description-block
+{
+  padding-top: 24px;
+
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.content-block__buttons-block
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.content-block__buttons-block a
+{
+  padding: 14px 47px;
+
+  text-decoration: none;
+
+  border: 2px solid var(--hover-black);
+  border-radius: 66px;
+}
+
+.content-block__buttons-block a span
+{
+  display: inline-block;
+  width: 165px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.support-idea
+{
+  color: var(--main-white);
+  background-color: var(--hover-black);
+  transition: 0.3s;
+}
+
+.details
+{
+  color: var(--hover-black);
+  background-color: none;
+  transition: 0.3s;
+}
+/* ==================================== - HEADER - ==================================== */
+
+.running-line
+{
+  display: flex;
+  gap: 2px;
+  min-width: 100%;
+  padding: 18px 0;
+
+  overflow: hidden;
+  
+  background-color: var(--main-red);
+}
+
+.line-text
+{
+  flex: 0 0 auto;
+
+  font-family: var(--font-family-big-text);
+  font-size: 22px;
+  line-height: 110%;
+
+  text-transform: uppercase;
+  text-wrap: nowrap;
+
+  color: var(--main-white);
+
+  /* animation: run 20s linear infinite; */
+}
+
+.circle
+{
+  display: inline-block;
+  margin: 0 10px 4px;
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background-color: var(--main-white);
+}
+
+@keyframes run {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ==================================== + Lecture Section + ==================================== */
+.lecture
+{
+  position: relative;
+  padding-top: 80px;
+}
+
+.lecture__content
+{
+  width: 764px;
+  padding: 27.5px 0;
+
+  font-family: var(--font-family-big-text);
+  font-size: 36px;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+.lecture__text-first,
+.lecture__text-second
+{
+  display: inline;
+  font-weight: 400;
+}
+
+.lecture__head
+{
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--main-red);
+}
+
+.lecture__image-block
+{
+  position: absolute;
+  top: 80px;
+  right: 5.27%;
+}
+/* ==================================== - Lecture Section - ==================================== */
+
+/* ==================================== + Game-session Section + ==================================== */
+.game-session
+{
+  padding-top: 64px;
+}
+
+.game-session__content
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 44px;
+}
+
+.game-session__image-block
+{
+  width: 447px;
+
+}
+
+.game-session__image-block img
+{
+  width: 100%;
+  transform: scale(1.1, 1.1);
+}
+
+.game-session__text-content
+{
+  width: 704px;
+}
+
+.text-content__head
+{
+  font-family: var(--font-family-big-text);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+.text-content__head .red-text
+{
+  font-weight: bold;
+  color: var(--main-red);
+}
+/* ==================================== - Game-session Section - ==================================== */
+
+/* ==================================== + HOVER + ==================================== */
+@media (hover: hover)
+{
+  .support-idea:hover
+  {
+    color: var(--hover-black);
+    border-color: var(--hover-yellow);
+    background-color: var(--hover-yellow);
+  }
+
+  .details:hover
+  {
+    color: var(--main-white);
+    background-color: var(--hover-black);
+  }
+}
+/* ==================================== - HOVER - ==================================== */
