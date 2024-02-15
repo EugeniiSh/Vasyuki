@@ -39,7 +39,7 @@ body
 .header
 {
   padding: 26px 0 130px;
-  /* height: 700px; */
+
   background-image: url(../assets/images/1920-header.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +75,6 @@ body
   align-items: start;
 
   font-family: var(--font-family-big-text);
-  /* font-weight: 400; */
   font-size: 60px;
   line-height: 110%;
   text-transform: uppercase;
@@ -140,6 +139,11 @@ body
   color: var(--hover-black);
   background-color: none;
   transition: 0.3s;
+}
+
+.details-turnir span
+{
+  padding: 0 40px;
 }
 /* ==================================== - HEADER - ==================================== */
 
