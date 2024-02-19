@@ -172,7 +172,7 @@ body
 
   color: var(--main-white);
 
-  /* animation: run 20s linear infinite; */
+  animation: run 20s linear infinite;
 }
 
 .circle
@@ -482,7 +482,6 @@ body
 
 .transformation__pagination-blocks
 {
-  /* display: flex; */
   display: none;
   justify-content: space-between;
   align-items: center;
@@ -497,8 +496,6 @@ body
 {
   position: relative;
 
-  /* width: 36px;
-  height: 36px; */
   width: 44px;
   height: 44px;
 
@@ -513,8 +510,6 @@ body
 {
   position: absolute;
   content: url(../assets/images/arrow-left.svg);
-  /* top: 10px;
-  left: 12px; */
   top: 13px;
   left: 15px;
 
@@ -525,8 +520,6 @@ body
 {
   position: absolute;
   content: url(../assets/images/arrow-right.svg);
-  /* top: 10px;
-  left: 14px; */
   top: 13px;
   left: 17px;
 
@@ -588,8 +581,13 @@ body
 
 .members__slider-block .slider-line
 {
+  position: relative;
+  left: 0;
+  
   display: flex;
   gap: 20px;
+
+  transition: 0.3s;
 }
 
 .members__slider-block .slider-line__item-block
@@ -705,3 +703,17 @@ body
   }
 }
 /* ==================================== - HOVER - ==================================== */
+
+/* ==================================== + ACTIVATORS + ==================================== */
+.disabled-arrow
+{
+  opacity: 0.2;
+  pointer-events: none;
+  cursor: auto;
+}
+
+.active-dot 
+{
+  background-color: var(--main-text-color-black) !important; 
+}
+/* ==================================== - ACTIVATORS - ==================================== */

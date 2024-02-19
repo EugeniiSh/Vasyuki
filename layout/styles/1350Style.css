@@ -239,6 +239,7 @@
     row-gap: 0;
 
     height: 300px;
+    transition: 0.3s;
   }
 
   .transformation__description-blocks > div:nth-of-type(1)
@@ -357,6 +358,8 @@
 
   .members__slider-block
   {
+    width: 335px;
+    margin: 0 auto;
     padding-top: 40px;
   }
 
