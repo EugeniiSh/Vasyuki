@@ -1,0 +1,396 @@
+@media (max-width: 1350px)
+{
+  .wrapper
+  {
+    width: 89.33%;
+  }
+
+  /* ==================================== + HEADER + ==================================== */
+  .header
+  {
+    padding: 18px 0 291px;
+
+    background-image: url(../assets/images/375-header-cut.png);
+  }
+
+  .header__head-block
+  {
+    gap: 5.5px;
+  }
+
+  .head__image-block img
+  {
+    width: 80px;
+  }
+
+  .text-head
+  {
+    font-size: 14.42px;
+  }
+
+  .header__content-block
+  {
+    padding-top: 40px;
+    width: 335px;
+  }
+
+  .content-block__main-text-block
+  {
+    font-size: 36px;
+  }
+
+  .content-block__description-block
+  {
+    text-align: left;
+  }
+
+  .content-block__buttons-block
+  {
+    flex-direction: column;
+    gap: 14px;
+
+    padding-top: 32px;
+  }
+
+  .content-block__buttons-block a
+  {
+    padding: 12px 0;
+  }
+
+  .content-block__buttons-block a span
+  {
+    width: 100%;
+  }
+  /* ==================================== - HEADER - ==================================== */
+
+  .running-line
+  {
+    padding: 10px 0;
+  }
+
+  .line-text
+  {
+    font-size: 16px;
+  }
+
+  /* ==================================== + Lecture Section + ==================================== */
+  .lecture
+  {
+    padding-top: 48px;
+  }
+
+  .lecture__content
+  {
+    width: 100%;
+    padding: 0;
+
+    font-size: 28px;
+  }
+
+  .lecture__head
+  {
+    font-size: 28px;
+  }
+
+  .lecture__image-block
+  {
+    position: static;
+    padding: 24px 0 16px;
+  }
+
+  .lecture__image-block img
+  {
+    width: 335px;
+  }
+  /* ==================================== + Lecture Section + ==================================== */
+
+  /* ==================================== + Game-session Section + ==================================== */
+  .game-session
+  {
+    padding-top: 54px;
+  }
+
+  .game-session__content
+  {
+    flex-direction: column;
+  }
+
+  .game-session__image-block
+  {
+    width: 100%;
+  }
+
+  .game-session__image-block img
+  {
+    transform: scale(1.1, 1.1) translate(0, 0);
+  }
+
+  .game-session__text-content
+  {
+    width: 100%;
+  }
+
+  .text-content__head
+  {
+    font-size: 28px;
+  }
+
+  .text-content__info-block
+  {
+    padding-top: 44px;
+  }
+
+
+  .game-session__text-content .info-block__title
+  {
+    width: 100%;
+    padding: 14px 16px 14px 0;
+
+    border: none;
+  }
+
+  .game-session__text-content .info-block__title:last-of-type
+  {
+    padding: 14px 16px 0 0;
+  }
+
+  .game-session__text-content .info-block__title:nth-of-type(4)
+  {
+    width: auto;
+    border-bottom: 2px solid var(--grid-gray);
+  }
+
+  .game-session__text-content .info-block__description
+  {
+    width: 100%;
+    min-width: auto;
+    padding: 0px 0 15px 0;
+
+    border-bottom: 2px solid var(--grid-gray);
+  }
+
+  .game-session__text-content .info-block__description:first-of-type
+  {
+    padding: 0 0 15px 0px;
+  }
+
+  .game-session__text-content .info-block__description:last-of-type
+  {
+    padding: 12px 0 0 0;
+    border-bottom: none;
+  }
+
+  .game-session__text-content .info-block__description:nth-of-type(4)
+  {
+    width: auto;
+    flex-grow: 1;
+    padding-top: 16px;
+  }
+
+  .game-session__text-content .text-content__details
+  {
+    padding-top: 40px;
+    font-size: 18px;
+  }
+  /* ==================================== - Game-session Section - ==================================== */
+
+  /* ==================================== + Transformation Section + ==================================== */
+  .transformation
+  {
+    padding-top: 120px;
+  }
+
+  .transformation__head-block
+  {
+    width: 100%;
+  }
+
+  .transformation__head-block .head-block__head
+  {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .transformation__head-block .head-block__details
+  {
+    width: 100%;
+    padding: 12px 0 0;
+
+    font-size: 18px;
+  }
+
+  .transformation__description
+  {
+    width: 335px;
+    margin: 0 auto;
+    padding-top: 148px;
+
+    overflow: hidden;
+  }
+
+  .transformation__description-blocks
+  {
+    position: relative;
+    left: 0;
+
+    grid-template-columns: repeat(5, 335px);
+    grid-template-rows: 134px 16px 1fr;
+    column-gap: 20px;
+    row-gap: 0;
+
+    height: 300px;
+    transition: 0.3s;
+  }
+
+  .transformation__description-blocks > div:nth-of-type(1)
+  {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    padding-top: 62px;
+  }
+
+  .transformation__description-blocks > div:nth-of-type(2)
+  {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    padding-top: 28px;
+    padding-bottom: 34px;
+  }
+
+  .transformation__description-blocks > div:nth-of-type(3)
+  {
+    grid-column: 2/3;
+    grid-row: 1/4;
+
+    padding-top: 62px;
+  }
+
+  .transformation__description-blocks div:nth-of-type(4)
+  {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    padding-top: 62px;
+    padding-bottom: 28px;
+  }
+
+  .transformation__description-blocks div:nth-of-type(5)
+  {
+    grid-column: 3/4;
+    grid-row: 2/4;
+
+    padding-top: 0;
+  }
+
+  .transformation__description-blocks div:nth-of-type(6)
+  {
+    grid-column: 4/5;
+    grid-row: 1/4;
+
+    padding-top: 62px;
+  }
+
+  .transformation__description-blocks div:nth-of-type(7)
+  {
+    grid-column: 5/6;
+    grid-row: 1/4;
+
+    padding-top: 62px;
+  }
+
+  .transformation__description-blocks .description-block
+  {
+    font-size: 18px;
+  }
+
+  .transformation__pagination-blocks
+  {
+    display: flex;
+  }
+
+  .pagination-block__left-arrow,
+  .pagination-block__right-arrow
+  {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pagination-block__left-arrow::before
+  {
+    top: 10px;
+    left: 12px;
+
+    transform: scale(1.1, 1.1);
+  }
+
+  .pagination-block__right-arrow::before
+  {
+    top: 10px;
+    left: 14px;
+
+    transform: scale(1.1, 1.1);
+  }
+
+  .transformation__image-block
+  {
+    bottom: 290px;
+  }
+
+  .transformation__image-block img
+  {
+    width: 335px;
+  }
+  /* ==================================== - Transformation Section - ==================================== */
+
+  /* ==================================== + Members Section + ==================================== */
+  .members
+  {
+    padding: 120px 0 102px;
+  }
+
+  .members__head
+  {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .members__slider-block
+  {
+    width: 335px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .members__slider-block .slider-line
+  {
+    gap: 32px;
+  }
+
+  .members__slider-block .slider-line__item-block
+  {
+    padding: 0;
+  }
+
+  .members__slider-block .slider-line__item-block .item__image-block
+  {
+    padding: 0 45px;
+  }
+
+  .members__slider-block .slider-line__item-block .item__image-block img
+  {
+    width: 244px;
+  }
+
+  .members__pagination-blocks
+  {
+    position: static;
+
+    width: 129px;
+
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  /* ==================================== - Members Section - ==================================== */
+}
