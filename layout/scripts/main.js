@@ -46,6 +46,8 @@ function isLastSlide(slideLine, sizeShift, numberElements)
   return slideLine.style.left === 0 + 'px' || slideLine.style.left === -(sizeShift * numberElements) + 'px'; 
 }
 
+
+
 // Transformation slider
 const transLine = document.querySelector('.transformation__description-blocks');
 const transLeftArrow = document.querySelector('.transformation__pagination-blocks > .pagination-block__left-arrow');
@@ -183,6 +185,31 @@ membersRightArrow.addEventListener('click', () =>
   }
 });
 
+setInterval(() => 
+{
+  const membersNumbers = membersPagination.querySelector('.numbers-block');
+  const membersSliderBlock = document.querySelector('.members__slider-block');
+
+  const membersSliderItemBlockWidth = parseFloat(getComputedStyle(membersElements[0]).width);
+  const membersSliderGap = parseInt(getComputedStyle(membersSliderLine).gap);
+  const visibleBlockNumber = parseInt(parseFloat(getComputedStyle(membersSliderBlock).width) / membersSliderItemBlockWidth);
+
+  let currentSlideValue = parseInt(membersNumbers.textContent);
+  
+  if(currentSlideValue < 6)
+  {
+    nextSlide(membersSliderLine, membersSliderItemBlockWidth + membersSliderGap, membersElements.length - 1, membersVar);
+    currentSlideValue++;
+    membersNumbers.textContent = `${currentSlideValue} / 6`;
+  }
+  else
+  {
+    membersVar.position = 0;
+    membersSliderLine.style.left = -membersVar.position + 'px';
+    membersNumbers.textContent = `${visibleBlockNumber} / 6`;
+  }
+}, 4000);
+
 
 window.addEventListener('resize',() => 
 {
@@ -201,4 +228,3 @@ window.addEventListener('resize',() =>
   }
 });
 
-// #9665b3
